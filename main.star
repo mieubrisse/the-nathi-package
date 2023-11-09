@@ -1,4 +1,8 @@
 def run(plan, greeting = "Welcome to the Nathi package!"):
+    """
+    Args:
+        greeting (string): The greeting that we should put inside the greeting.txt file
+    """
     # TODO
     plan.print("We're about to run the Nathi package!")
 
