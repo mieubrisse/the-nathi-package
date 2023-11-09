@@ -1,9 +1,9 @@
-def run(plan):
+def run(plan, greeting = "Welcome to the Nathi package!"):
     # TODO
     plan.print("We're about to run the Nathi package!")
 
     plan.run_sh(
-        "mkdir /output && echo 'Welcome to the Nathi package!' > /output/greeting.txt",
+        "mkdir /output && echo '" + greeting + "' > /output/greeting.txt",
         store = ["/output"],
     )
 
